@@ -1,0 +1,53 @@
+/*
+ * Created by Julián Falcionelli on 2019.
+ * Copyright © 2019 Bardo (bybardo.co). All rights reserved.
+ * Happy Coding !
+ */
+
+buildscript {
+    ext {
+        kotlin_version = '1.3.31'
+    }
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.0'
+        classpath 'io.fabric.tools:gradle:1.28.0'
+        classpath 'com.google.firebase:firebase-plugins:2.0.0'
+        classpath 'com.google.firebase:perf-plugin:1.3.1'
+    }
+}
+
+// Static Code Analyzer
+
+plugins {
+    id "io.gitlab.arturbosch.detekt" version "1.0.0-RC15"
+}
+
+detekt {
+    input = files("$rootDir/app/src/main")
+    config = files("$rootDir/default-detekt-config.yml")
+    filters = ".*build.*,.*/resources/.*,.*/tmp/.*"
+}
+
+dependencies {
+    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.0.0-RC15"
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://jitpack.io/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

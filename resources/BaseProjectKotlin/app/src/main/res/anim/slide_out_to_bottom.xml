@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Julián Falcionelli on 2019.
+  ~ Copyright © 2019 Bardo (bybardo.co). All rights reserved.
+  ~ Happy Coding !
+  -->
+
+<translate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@android:integer/config_mediumAnimTime"
+    android:fromYDelta="0%p"
+    android:toYDelta="100%p"/>

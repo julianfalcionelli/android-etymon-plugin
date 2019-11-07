@@ -1,0 +1,118 @@
+<!--
+  ~ Created by Julián Falcionelli on 2019.
+  ~ Copyright © 2019 Bardo (bybardo.co). All rights reserved.
+  ~ Happy Coding !
+  -->
+
+<resources>
+
+    <style name="BaseTheme"
+           parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+
+        <item name="alertDialogStyle">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="AppTheme"
+           parent="BaseTheme">
+        <item name="android:statusBarColor">@color/gray</item>
+    </style>
+
+    <style name="AppTheme.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="SplashTheme"
+           parent="BaseTheme">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay"
+           parent="ThemeOverlay.MaterialComponents.Light"/>
+
+    <style name="ToolbarTitle"
+           parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BaseButton"
+           parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <style name="DefaultTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FormTextInputLayout"
+           parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/FormTextInputLayoutTheme</item>
+        <item name="errorTextAppearance">@style/TextInputErrorAppearance</item>
+    </style>
+
+    <style name="FormTextInputLayoutTheme">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="TextInputErrorAppearance"
+           parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="AlertDialogStyle"
+           parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/gray</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PositiveButton</item>
+    </style>
+
+    <style name="PositiveButton"
+           parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="FormEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@drawable/edit_text_colors</item>
+    </style>
+
+</resources>

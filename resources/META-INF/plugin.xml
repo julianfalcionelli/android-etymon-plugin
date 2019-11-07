@@ -1,0 +1,38 @@
+<idea-plugin>
+  <id>co.bybardo.julianfalcionelli.android-etymon</id>
+  <name>Android Etymon</name>
+  <version>1.0.1</version>
+  <vendor email="julian@bybardo.co" url="http://www.bybardo.co">BARDO</vendor>
+
+  <description>
+    <![CDATA[
+     This plugin allows you to create a base android project according to the requirements of the project and the structure that best suits your way of working.
+    ]]>
+  </description>
+
+  <change-notes>
+    <![CDATA[
+      First Beta Version.<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <moduleType id="AndroidEtymonModuleType" implementationClass="AndroidEtymonModuleType"/>
+    <!-- <moduleBuilder builderClass="DemoModuleWizardStep" id="DEMO_STEP" order="first"/> -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

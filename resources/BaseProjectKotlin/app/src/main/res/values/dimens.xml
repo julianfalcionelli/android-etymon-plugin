@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Julián Falcionelli on 2019.
+  ~ Copyright © 2019 Bardo (bybardo.co). All rights reserved.
+  ~ Happy Coding !
+  -->
+
+<!--
+ Dimensions for devices with low resolution
+  -->
+
+<resources>
+    <dimen name="android_soft_key_buttons_bar_height">48dp</dimen>
+
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+</resources>

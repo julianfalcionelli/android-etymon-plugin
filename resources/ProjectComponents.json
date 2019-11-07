@@ -1,0 +1,107 @@
+[
+    {
+      "marker" : "BLE",
+      "name" : "Bluetooth",
+      "description" : "Enables your app to quickly communicate with a BLE device.",
+      "paths" : [ "app/src/main/java/co/bybardo/myapp/infrastructure/bluetooth"],
+      "sharedPaths" : [
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "GOOGLE-MAPS",
+      "name" : "Google Maps",
+      "description" : "Useful maps utilities and managers.",
+      "paths" : [
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/maps"
+      ],
+      "sharedPaths" : [
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ActivityScopedManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "FIREBASE-MESSAGING",
+      "name" : "Firebase Push Notifications",
+      "description" : "All the Firebase Push Notifications services in a way that you can easily customize the notifications UI.",
+      "paths" : [  ],
+      "sharedPaths" : [
+        "app/proguard-rules.pro",
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml",
+        "app/src/main/res/values/donottranslate.xml",
+        "app/src/main/java/co/bybardo/myapp/application/MyAppApplication.kt",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "BIOMETRICS",
+      "name" : "Biometrics",
+      "description" : "Useful utilities and managers to achieve biometrics authentication.",
+      "paths" : [ "app/src/main/java/co/bybardo/myapp/infrastructure/manager/biometrics"],
+      "sharedPaths" : [
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "ANALYTICS",
+      "name" : "Analytics",
+      "description" : "Useful utilities and managers to quickly track any event and the performance of your application to Firebase Analytics.",
+      "paths" : [ "app/src/main/java/co/bybardo/myapp/infrastructure/manager/analytics"],
+      "sharedPaths" : [
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml",
+        "app/src/main/java/co/bybardo/myapp/application/MyAppApplication.kt",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "CRASHLYTICS",
+      "name" : "Crash Reporting",
+      "description" : "Upload crashes to Firebase",
+      "paths" : [ ],
+      "sharedPaths" : [
+        "app/proguard-rules.pro",
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml",
+        "app/src/main/java/co/bybardo/myapp/application/MyAppApplication.kt",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "CALENDAR",
+      "name" : "Calendar",
+      "description" : "Useful utilities and managers to interact with Google Calendar.",
+      "paths" : [ ],
+      "sharedPaths" : [
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "PERMISSIONS",
+      "name" : "Permissions",
+      "description" : "Useful utilities and managers to ask the User for the different access permissions.",
+      "paths" : [ ],
+      "sharedPaths" : [
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ManagersModule.kt",
+        "app/src/main/java/co/bybardo/myapp/infrastructure/manager/ActivityScopedManagersModule.kt"
+      ]
+    },
+    {
+      "marker" : "REST-CLIENT",
+      "name" : "REST Client (Retrofit2)",
+      "description" : "Support to quickly integrate a REST API with different enviroments and a lot of customizable parameters.",
+      "paths" : [ "app/src/main/java/co/bybardo/myapp/infrastructure/networking"],
+      "sharedPaths" : [
+        "app/proguard-rules.pro",
+        "app/build.gradle",
+        "app/src/main/AndroidManifest.xml"
+      ]
+    }
+]

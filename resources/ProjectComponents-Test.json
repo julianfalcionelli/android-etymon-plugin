@@ -1,0 +1,16 @@
+[
+    {
+      "marker" : "COMPONENT1",
+      "name" : "Component 1",
+      "description" : "Component 1 Description.",
+      "paths" : [ "component1/file1", "component1/file2"],
+      "sharedPaths" : [ "README.md"]
+    },
+    {
+      "marker" : "COMPONENT2",
+      "name" : "Component 2",
+      "description" : "Component 2 Description.",
+      "paths" : [ "component2/file1", "component2/file2"],
+      "sharedPaths" : [ "README.md"]
+    }
+]

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Julián Falcionelli on 2019.
+  ~ Copyright © 2019 Bardo (bybardo.co). All rights reserved.
+  ~ Happy Coding !
+  -->
+
+<resources>
+    <!-- ETYMON-ALFA-FIREBASE-MESSAGING -->
+    FIREBASE-MESSAGING
+    <!-- Notifications -->
+    <string name="firebase_sender_id"
+            translatable="false">123456
+    </string>
+    <!-- ETYMON-OMEGA-FIREBASE-MESSAGING -->
+
+    <!-- Common -->
+    <string name="dot">.</string>
+    <string name="space">\u0020</string>
+    <string name="percent_value">%d %%</string>
+
+    <!-- Units -->
+    <string name="units_celcius">\u2103</string>
+    <string name="units_percent">%%</string>
+
+</resources>
