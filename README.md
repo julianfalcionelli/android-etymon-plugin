@@ -36,6 +36,12 @@ Contributors
 -----
 This plugin was made with the help and love of our old Android Team from LateralView and BARDO. 
 
+Useful Links
+-----
+- Project Wizard Development: https://www.jetbrains.org/intellij/sdk/docs/reference_guide/project_wizard.html
+- Plugin Deploy: https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/deploying_plugin.html
+
+
 License
 -----
     Copyright 2019 BARDO
